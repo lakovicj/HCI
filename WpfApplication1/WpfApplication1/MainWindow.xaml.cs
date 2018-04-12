@@ -52,8 +52,8 @@ namespace WpfApplication1
             grid.Children.Add(gp);
             // provera API-ja
             string URL = "https://www.alphavantage.co/query";
-            string urlParameters = "?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=1ST174M77Q7QPYDW";
-            StockApi api = new StockApi(URL, urlParameters);
+            string urlParameters = "?function=TIME_SERIES_WEEKLY&symbol=MSFT&apikey=1ST174M77Q7QPYDW";
+            StockApi api = new StockApi();
 
         }
 
